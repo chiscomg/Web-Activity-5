@@ -1,0 +1,245 @@
+*{
+	font-family:'Roboto','SF Pro Display','Source Sans Pro', sans-serif;
+	font-size: 14px;
+	letter-spacing: -0.25px;
+	padding: 0;	
+	/*transition: all 0.45s cubic-bezier(0,.93,.58,.98);*/
+}
+body{
+	background-color: rgba(0,0,0,0.02);
+}
+
+header {
+	background-color: #fff !important;
+}
+
+.underline {
+	border-bottom: 1px solid #eeeeee;
+}
+
+.shadow-none {
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+section{
+	background-color: #fff;
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+/** GOOGLE BRANDING **/
+/* nav .brand-logo {
+left: 1.5rem !important;
+} */
+
+.brand-logo{
+	font-family: 'Google Sans';
+	color: rgba(0,0,0,0.75);
+	font-size: 1.5rem !important;
+}
+
+.brand-logo span{
+	font-family: 'Google Sans';
+	color: rgba(0,0,0,0.75);
+	font-weight: 600;
+	font-size: 1.5rem !important;
+}
+
+.nav-wrapper ul li a, .flex-container p, .flex-container p a, .main-title h1, .main-title h1 span{
+	font-family: 'Google Sans';
+}
+
+.main-title{
+	padding-top: 1.5%;
+}
+
+
+#blue{ color: #4285f4;}
+#red{ color: #db4437;}
+#yellow{ color: #faba00;}
+#green{ color: #0f9d58;}
+
+
+
+
+
+/* SPACING BC MAterialize seems not to have a similar property as in boostrap */
+.ml-1{
+	margin-left: 2rem !important;
+}
+.ml-2{
+	margin-left: 4rem !important;
+}
+.ml-3{
+	margin-left: 12rem !important;
+}
+nav .sidenav-trigger {
+	margin: 0 !important;
+}
+
+.circle{
+	border-radius: 50%;
+	padding: 15px;
+}
+
+.sidenav li a {
+	font-family: 'Google Sans';
+	color: rgba(0,0,0,0.70);
+}
+
+.sidenav li > a:hover {
+	background-color: transparent;
+	color: rgba(0,0,0,0.95);
+}
+
+.nav-wrapper{
+	width: 95%;
+	margin: 0 auto;
+}
+.nav-wrapper ul li a {
+	color: rgba(0,0,0,0.70);
+	font-size: 0.9rem;
+}
+.nav-wrapper ul li > a:hover {
+	background-color: transparent;
+	color: rgba(0,0,0,0.95);
+}
+.flex-container, .flex-container-s {
+	display: flex;
+	flex-direction:row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.flex-container p{
+	padding: 0 0.75rem;
+}
+
+.flex-container li a{
+	padding: 0 0.5rem;
+	font-size: 0.9rem;
+}
+
+.flex-container i{
+	padding-left: 6px;
+}
+
+.page-body{
+	position: relative;
+	margin-top: -1.50rem;
+	padding-top: 1rem;
+	z-index: -1;
+}
+
+.title {
+	font-weight: 700;
+	letter-spacing: -1.5px;
+	padding-bottom: 2rem;
+}
+
+.title span {
+	font-size: 4.2rem;
+	letter-spacing: -1.5px;
+}
+
+.images{
+	position: relative;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	padding: 15px;
+	margin: 15px;
+}
+
+.content-container{
+	box-sizing: content-box;
+	margin: 0 auto;
+	max-width: 1224px;
+	padding-left: 4%;
+	padding-right: 4%;
+	padding-top: 2%;
+}
+
+#business{background-image: url(../images/business.jpg);}
+#products{background-image: url(../images/product.jpg);}
+
+.item{
+	flex-grow: 0 1;
+}
+/* Cards */ 
+.caption {
+	position: absolute;
+	width: 65%;
+	font-weight: 300;
+	top: 55%;
+	font-size: 2.1rem;
+	margin-left: 1.5rem;
+	text-shadow: 1px 0 8px rgba(0,0,0,0.7);
+}
+
+@media only screen and (max-width: 1200px) {
+	.caption{
+		margin-left: 0;
+		padding: 1rem;
+		width: 100%;
+	}
+	.images {
+		height: 400px;
+	}
+}
+@media only screen and (max-width: 992px) {
+	.flex-container-s{
+		flex-direction: column;
+		width: 80%;
+	}
+	section{
+		width: 100%;
+	}
+	.caption{
+		width: 45%;
+		font-size: 1.75rem;
+	}
+	.images {
+		height: 350px;
+	}
+	/* SPACING BC MAterialize seems not to have a similar property as in boostrap */
+	.ml-1-s{
+		margin-left: 2rem !important;
+	}
+	.ml-2-s{
+		margin-left: 2rem !important;
+	}
+	.ml-3-s{
+		margin-left: 3rem !important;
+	}
+	.ml-4-s{
+		margin-left: 4rem !important;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+
+	.flex-container-s{
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+	}
+	.title span{
+		font-size: 2.5rem;
+	}
+	.caption{
+		top: 55%;
+		width: 80%;
+		font-size: 1.75rem;
+	}
+	.images {
+		height: 300px;
+	}
+
+}
